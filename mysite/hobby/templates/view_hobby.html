@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body  %}
+
+
+<div class="row">
+
+   <div class="col-md-8" style="margin: auto;">
+
+      <div class="card">
+         <div class="card-body">
+            <ul>
+
+   
+               {% for single_hobby in hobby %}
+               <li>{{single_hobby}}</li>
+               {% endfor %}
+                       </ul>
+         </div>
+       </div>
+
+       {% endblock %}
+
+
+</div>
